@@ -1,0 +1,53 @@
+{
+  "name": "pont-engine-plus",
+  "version": "0.0.2",
+  "description": "pont-plus swagger typescript API",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "bin": {
+    "pont-plus": "bin/init.js"
+  },
+  "scripts": {
+    "pretest": "npm run build",
+    "dev": "tsc -w",
+    "watch": "tsc -w",
+    "build-hooks-js": "tsc --project pontCore/tsconfig.json",
+    "build": "shx rm -rf lib & npm run build-hooks-js && tsc"
+  },
+  "dependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "chalk": "^2.3.0",
+    "commander": "^2.19.0",
+    "fs-extra": "^10.0.0",
+    "http-server": "^14.1.0",
+    "inquirer": "^7.1.0",
+    "jest": "^27.4.7",
+    "lodash": "^4.17.5",
+    "node-fetch": "^1.7.3",
+    "prettier": "^2.4.1",
+    "react": "^17.0.2",
+    "shx": "^0.3.4",
+    "swr": "^1.1.2",
+    "translation.js": "^0.7.5",
+    "typescript": "^3.5.3"
+  },
+  "files": [
+    "pontCore",
+    "lib",
+    "*.md",
+    "bin"
+  ],
+  "keywords": [
+    "pont-plus",
+    "swagger",
+    "typescript",
+    "API"
+  ],
+  "author": "dshvv",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dshvv/pont-engine-plus.git"
+  },
+  "homepage": "https://github.com/dshvv/pont-engine-plus#readme"
+}
